@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2b8af;
+
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+    padding: 0;
+
+}
+
+header nav ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+.menu>li>a {
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu li:hover {
+    background-color: #ffff;
+    transition: all .3s;
+}
+
+.menu li:hover .menu-a {
+    color: #f2b8af;
+    transition: all .3s;
+}
+
+
+
+/* Submenu*/
+
+.submenu {
+    position: absolute;
+    background-color: #f2b8af;
+    width: 100%;
+    transform: translateX(-13%);
+    top: 61px;
+    visibility: hidden;
+    opacity: 100;
+    transition: opacity 1.5s;
+    z-index: 999;
+}
+
+.submenu li {
+    padding: 0px;
+}
+
+.submenu li a {
+    display:block;
+    padding: 15px;
+    color: #ffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.menu li:hover .submenu {
+  color: #ffff;
+
+}
+
+.submenu>li>a:hover {
+    color: #f2b8af;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+    background-color: #f2b8af;
+}
+
+
+/*About us*/
+
+.inicio {
+    display: block;
+    text-align: center;
+    background-color: #ededf7;
+    padding: 20px;
+}
+
+.location {
+    display: flex;
+    text-align: center;
+    background-color: #ededf7;
+}
+
+.derecha, .izquierda {
+    padding: 20px 20px;
+}
+
+
+/*Products*/
+
+.gallery {
+    background-color: #ededf7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    justify-content: center;
+}
+
+.gallery-item {
+    box-sizing: border-box;
+    flex: 1 1 30%;
+    max-width: 350px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    padding: 0px 0.5rem;
+    background-color: #fff;
+}
+
+.gallery-item img {
+    
+    width: 325px;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 0.75rem;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+    border-radius: 2%;
+}
+
+.gallery-item .price {
+    border: 1px solid #000;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 10px 10px;    
+}
