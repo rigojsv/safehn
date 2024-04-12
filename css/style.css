@@ -177,3 +177,45 @@ h1{
 .gallery-item:hover {
     transform: rotate(0deg) translateY(0) scale(1.05);
 }
+
+/* faq*/
+#faq-section h2 {
+    text-align: center; 
+    font-size: 32px; 
+}
+
+#faq-section {
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 24px; 
+}
+
+
+.arrow {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.question.active .arrow {
+    transform: rotate(90deg);
+}
+
+.answer {
+    margin-top: 10px;
+}
