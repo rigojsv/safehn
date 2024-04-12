@@ -8,6 +8,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    background-color: #ededf7;
 }
 
 header {
@@ -114,14 +115,12 @@ footer {
 .inicio {
     display: block;
     text-align: center;
-    background-color: #ededf7;
     padding: 20px;
 }
 
 .location {
     display: flex;
     text-align: center;
-    background-color: #ededf7;
 }
 
 .derecha, .izquierda {
@@ -130,6 +129,12 @@ footer {
 
 
 /*Products*/
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
 
 .gallery {
     background-color: #ededf7;
@@ -147,6 +152,8 @@ footer {
     border-radius: 5px;
     padding: 0px 0.5rem;
     background-color: #fff;
+    text-align: center;
+    transition: 1s transform ease;
 }
 
 .gallery-item img {
@@ -161,11 +168,12 @@ footer {
 }
 
 .gallery-item .price {
-    border: 1px solid #000;
     display: inline-block;
-    background-color: #000;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    border-radius: 50%;
     padding: 10px 10px;    
+}
+
+.gallery-item:hover {
+    transform: rotate(0deg) translateY(0) scale(1.05);
 }
