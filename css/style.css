@@ -187,15 +187,14 @@ h1{
 #faq-section {
     padding: 20px;
     margin: 20px;
+    height: 90vh;
 }
-
 
 .faq-item {
     margin-bottom: 15px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
 }
-
 
 .question {
     display: flex;
@@ -205,7 +204,6 @@ h1{
     font-weight: bold;
     font-size: 24px; 
 }
-
 
 .arrow {
     transform: rotate(0deg);
