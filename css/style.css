@@ -108,20 +108,40 @@ footer {
 
 
 /*About us*/
+.fondo {
+    background-image: url(/resources/fondo.jpeg);
+    background-size: cover;
+    height: 90vh;
+}
 
 .inicio {
     display: block;
-    text-align: center;
+    text-align: justify;
     padding: 20px;
 }
-
+.about {
+    padding: 20px;
+    margin: 0px 400px;
+    
+}
 .location {
     display: flex;
+    /*text-align: justify;*/
+}
+
+.location h2 {
     text-align: center;
 }
 
 .derecha, .izquierda {
-    padding: 20px 20px;
+    flex: 1;
+    padding: 20px;
+    margin: 70px 100px;
+}
+
+.derecha, .izquierda, .about {
+    background-color: #ededf7;
+    border-radius: 2%;
 }
 
 
