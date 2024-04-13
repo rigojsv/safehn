@@ -100,9 +100,6 @@ header nav ul {
 
 
 
-
-
-
 /*Footer*/
 
 footer {
@@ -129,11 +126,41 @@ footer {
 
 
 /*Products*/
+main {
+    min-height: 90vh;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
 
 h1{
     text-align: center;
     margin-top: 20px;
     font-size: 2.5rem;
+}
+
+.gallery-products {
+    background-color: #ededf7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+}
+
+.see-more {
+    border: 1px solid #ffff;
+    display: inline-block;
+    background-color: #f2b8af;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15%;
+    padding: 10px 10px; 
+    margin: 10px;
 }
 
 .gallery {
@@ -142,7 +169,6 @@ h1{
     flex-wrap: wrap;
     padding: 0.8rem;
     justify-content: center;
-    min-height: 90vh;
 }
 
 .gallery-item {
