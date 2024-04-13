@@ -109,7 +109,7 @@ footer {
 
 /*About us*/
 .fondo {
-    background-image: url(/resources/fondo.jpeg);
+    background-image: url(/resources/backgrounds/img1.jpeg);
     background-size: cover;
     height: 90vh;
 }
@@ -226,6 +226,20 @@ h1{
 }
 
 /* faq*/
+.fondo2 {
+    margin: 0;
+    background-image: url(/resources/backgrounds/img2.jpeg);
+    background-size: cover;
+    height: 90vh;
+}
+
+.faq-box{
+    background-color: #ededf7;
+    padding: 20px;
+    border-radius: 2%;
+    margin-top: 20px;
+}
+
 #faq-section h2 {
     text-align: center; 
     font-size: 32px; 
@@ -233,8 +247,8 @@ h1{
 
 #faq-section {
     padding: 20px;
-    margin: 20px;
-    height: 90vh;
+    margin: 0px 20px;
+    
 }
 
 .faq-item {
@@ -264,3 +278,17 @@ h1{
 .answer {
     margin-top: 10px;
 }
+
+
+/*contact*/
+
+.fondo3 {
+    background-image: url(/resources/backgrounds/img3.jpeg);
+    background-size: cover;
+    height: 90vh;
+}
+
+.social-box p{
+    color: #ffff;
+}
+
