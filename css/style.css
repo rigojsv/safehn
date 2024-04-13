@@ -109,7 +109,7 @@ footer {
 
 /*About us*/
 .fondo {
-    background-image: url(https://github.com/rigojsv/safehn/blob/main/resources/backgrounds/img1.jpeg);
+    background-image: url(https://github.com/rigojsv/safehn/blob/6c7c6857f8d08dc213f07a631bf49323a28e2724/resources/backgrounds/img1.jpeg);
     background-size: cover;
     height: 90vh;
 }
@@ -228,7 +228,7 @@ h1{
 /* faq*/
 .fondo2 {
     margin: 0;
-    background-image: url(https://github.com/rigojsv/safehn/blob/main/resources/backgrounds/img2.jpeg);
+    background-image: url(https://github.com/rigojsv/safehn/blob/6c7c6857f8d08dc213f07a631bf49323a28e2724/resources/backgrounds/img2.jpeg);
     background-size: cover;
     height: 90vh;
 }
@@ -283,7 +283,7 @@ h1{
 /*contact*/
 
 .fondo3 {
-    background-image: url(https://github.com/rigojsv/safehn/blob/main/resources/backgrounds/img3.jpeg);
+    background-image: url(https://github.com/rigojsv/safehn/blob/6c7c6857f8d08dc213f07a631bf49323a28e2724/resources/backgrounds/img3.jpeg);
     background-size: cover;
     height: 90vh;
 }
