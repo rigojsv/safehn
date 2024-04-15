@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ededf7;
+}
+
 header {
     background-color: #f2b8af;
 }
@@ -19,7 +25,7 @@ header {
 }
 
 header .hamburger{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +35,7 @@ header .hamburger{
     position: absolute;
     right: 0.1rem;
     top:0.1rem;
+   
 }
 
 header .hamburger div {
@@ -43,42 +50,34 @@ header nav ul {
     list-style: none;
 }
 
-
-header nav {
-    position: relative;
-    left: 0;
-    transition: left 3s ease;
-  }
-  
-  header nav.hide {
-   left: 100%;
-   transition: all 3s ease;
-  }
-
 @media (min-width: 1024px){
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu>li {
+        position: relative;
+        display: inline-block;
+        padding: 15px;
+    }
     
-.menu>li {
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-}
-
-.menu>li>a {
-    display: block;
-    color: #ffff;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.menu li:hover {
-    background-color: #ffff;
-    transition: all .3s;
-}
-
-.menu li:hover .menu-a {
-    color: #f2b8af;
-    transition: all .3s;
-}
+    .menu>li>a {
+        display: block;
+        color: #ffff;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+    .menu li:hover {
+        background-color: #ffff;
+        transition: all .3s;
+    }
+    
+    .menu li:hover .menu-a {
+        color: #f2b8af;
+        transition: all .3s;
+    }
 
 /* Submenu*/
 
@@ -125,6 +124,21 @@ header nav {
 
 
 @media (max-width: 1023px){
+    header .hamburger{
+        display: flex;
+    }
+
+    header nav {
+        position: relative;
+        left: 0;
+        transition: left 3s ease;
+      }
+      
+      header nav.hide {
+       left: 100%;
+       transition: all 3s ease;
+      }
+
     .menu {
         position: absolute;
         width: 100%;
