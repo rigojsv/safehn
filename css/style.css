@@ -194,21 +194,24 @@ footer {
 .fondo {
     background-image: url(/resources/backgrounds/img1.jpeg);
     background-size: cover;
-    height: 90vh;
+    height: fit-content;
 }
 
 .inicio {
-    display: block;
+    display: flex;
     text-align: justify;
     padding: 20px;
+    justify-content: center;
 }
 .about {
     padding: 20px;
-    margin: 0px 400px;
+    max-width: 350px;
     
 }
 .location {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .location h2 {
@@ -218,7 +221,8 @@ footer {
 .derecha, .izquierda {
     flex: 1;
     padding: 20px;
-    margin: 70px 100px;
+    margin: 70px;
+    max-width: 350px;
 }
 
 .derecha, .izquierda, .about {
@@ -312,7 +316,7 @@ h1{
     margin: 0;
     background-image: url(../resources/backgrounds/img2.jpeg);
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
 }
 
 .faq-box{
@@ -367,7 +371,7 @@ h1{
 .fondo3 {
     background-image: url(../resources/backgrounds/img3.jpeg);
     background-size: cover;
-    height: 90vh;
+    height:100vh;
 }
 
 .social-box p{
