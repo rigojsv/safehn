@@ -5,20 +5,11 @@
     padding: 0;
 }
 
-body {
-    padding: 0px;
-    margin: 0px;
-    background-color: #ededf7;
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
     background-color: #f2b8af;
-
 }
 
-header img {
+.logo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -27,10 +18,45 @@ header img {
 
 }
 
+header .hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:48px;
+    height:48px;
+    padding:0.25rem;
+    position: absolute;
+    right: 0.1rem;
+    top:0.1rem;
+}
+
+header .hamburger div {
+    width:80%;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 5px;
+    margin: 5px 0px;
+}
+
 header nav ul {
     list-style: none;
 }
 
+
+header nav {
+    position: relative;
+    left: 0;
+    transition: left 3s ease;
+  }
+  
+  header nav.hide {
+   left: 100%;
+   transition: all 3s ease;
+  }
+
+@media (min-width: 1024px){
+    
 .menu>li {
     position: relative;
     display: inline-block;
@@ -53,8 +79,6 @@ header nav ul {
     color: #f2b8af;
     transition: all .3s;
 }
-
-
 
 /* Submenu*/
 
@@ -97,8 +121,54 @@ header nav ul {
     opacity: 1;
 
 }
+}
 
 
+@media (max-width: 1023px){
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #f2c2bf;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .menu>li {
+        align-items: center;
+        padding: 15px 0px ;
+        width: 100%;
+
+    }
+    
+    .menu>li>a {
+        display: flex;
+        color: #ffff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu li:hover {
+        background-color: #ffff;
+        transition: all .3s;
+    }
+    
+    .menu li:hover .menu-a {
+        color: #f2b8af;
+        transition: all .3s;
+    }
+
+    /*Submenu*/
+
+    .submenu {
+        display: none;
+    }
+    
+}
 
 /*Footer*/
 
@@ -106,10 +176,9 @@ footer {
     background-color: #f2b8af;
 }
 
-
 /*About us*/
 .fondo {
-    background-image: url(../resources/backgrounds/img1.jpeg);
+    background-image: url(/resources/backgrounds/img1.jpeg);
     background-size: cover;
     height: 90vh;
 }
@@ -126,7 +195,6 @@ footer {
 }
 .location {
     display: flex;
-    /*text-align: justify;*/
 }
 
 .location h2 {
@@ -291,4 +359,3 @@ h1{
 .social-box p{
     color: #ffff;
 }
-
