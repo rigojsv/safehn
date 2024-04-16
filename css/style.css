@@ -210,7 +210,7 @@ footer {
 
 /*About us*/
 .fondo {
-    background-image: url(/resources/backgrounds/img1.jpeg);
+    background-image: url(../resources/backgrounds/img1.jpeg);
     background-size: cover;
     height: fit-content;
 }
