@@ -61,31 +61,39 @@
         </nav>
     </header>
    <main>
-        <section class="carusel">
-            <section class="caruseltrack">
-                <div class="caruselItem">
-                    <picture>
-                        <img src="Imagenes/img1.jpeg" alt="" />
-                    </picture>
-                </div>
-                <div class="caruselItem">
-                    <picture>
-                        <img data-srcset="recursos pagina/img1.jpeg" alt="" />
-                    </picture>
-                </div>
-                <div class="caruselItem">
-                    <picture>
-                        <img data-srcset="recursos pagina/img2.jpeg" alt="" />
-                    </picture>
-                </div>
-                <div class="caruselItem">
-                    <picture>
-                        <img data-srcset="recursos pagina/img3.jpeg" alt="" />
-                    </picture>
-                </div>
-                <a href="#">Comprar</a>
-            </section>
+    <a class="buy" href="products.html">¡Compra ya!</a>
+    <section class="carusel">
+        <section class="caruseltrack">
+            <div class="caruselItem">
+                <picture>
+                    <source srcset="/resources/backgrounds/img1.jpeg" media="min-width:1025px" />
+                    <source src="" media="min-width:721px" />
+                    <img src="/resources/backgrounds/img1.jpeg" alt="" />
+                </picture>
+            </div>
+            <div class="caruselItem">
+                <picture>
+                    <source data-srcset="" media="min-width:1025px" />
+                    <source data-srcset="" media="min-width:721px" />
+                    <img data-srcset="" alt="" />
+                </picture>
+            </div>
+            <div class="caruselItem">
+                <picture>
+                    <source data-srcset="https://picsum.photos/id/300/1230/960" media="min-width:1025px" />
+                    <source data-srcset="https://picsum.photos/id/300/1024/680" media="min-width:721px" />
+                    <img data-srcset="https://picsum.photos/id/300/480/480" alt="" />
+                </picture>
+            </div>
+            <div class="caruselItem">
+                <picture>
+                    <source data-srcset="https://picsum.photos/id/400/1230/960" media="min-width:1025px" />
+                    <source data-srcset="https://picsum.photos/id/400/1024/680" media="min-width:721px" />
+                    <img data-srcset="https://picsum.photos/id/400/480/480" alt="" />
+                </picture>
+            </div>
         </section>
+    </section>
 
         <section class="inicio"></section>
     </main>

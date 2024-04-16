@@ -50,6 +50,24 @@ header nav ul {
     list-style: none;
 }
 
+
+.buy {
+    position: fixed;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4rem;
+    font-size: 3rem;
+    padding: 20px;
+    border: 2px solid #000;
+    z-index: 998;
+}
+
+.buy:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 @media (min-width: 1024px){
     header {
         display: flex;
@@ -131,12 +149,12 @@ header nav ul {
     header nav {
         position: relative;
         left: 0;
-        transition: left 3s ease;
+        transition: left 1s ease;
       }
       
       header nav.hide {
        left: 100%;
-       transition: all 3s ease;
+       transition: all 1s ease;
       }
 
     .menu {
@@ -376,4 +394,17 @@ h1{
 
 .social-box p{
     color: #ffff;
+}
+
+/*Events*/
+
+.izquierda video {
+    width: 100%;
+    border-radius: 2%;
+}
+
+
+.derecha img {
+    width: 100%;
+    height: 100%;
 }
