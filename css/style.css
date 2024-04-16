@@ -188,7 +188,6 @@ header nav ul {
     
     }
     
-    
 }
 
 /*Footer*/
@@ -449,10 +448,11 @@ h1{
 
 
 #social-media {
+    position: relative;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 200px;
+    gap: 30px;
+    top: 30%;
 }
 
 
