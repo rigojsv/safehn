@@ -5,18 +5,6 @@
     position: relative;
 }
 
-.caruseltrack a {
-    border: 1px solid #000;
-    color: #000;
-    text-decoration: none;
-    border-radius: 2rem;
-    padding: 10px 20px;
-    background-color: #fff;
-
-
-
-}
-
 .carusel .caruseltrack {
     position: relative;
     display: flex;
@@ -34,16 +22,41 @@
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 400px;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
 }
 
-.carusel .caruseltrack .caruselItem h2 {
+.carusel h1 {
     position: absolute;
+    text-decoration: none;
+    color: #fff;
+    top: 30%;
+    left: 50%;
+    z-index: 998;
+    transform: translateX(-50%) translateY(-50%);
+    letter-spacing: 3px;
+}
+
+.carusel a{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f2b8af;
+    border-radius: 4rem;
+    font-size: 2rem;
+    padding: 10px;
+    border: 2px solid #fff;
+    z-index: 998;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.carusel a:hover{
+    background-color: #fff;
+    color: #f2b8af;
+    border: 2px solid #f2b8af;
 }
 
 .carusel .navigator{
@@ -55,7 +68,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 998;
+    z-index: 1001;
     padding:1rem;
 }
 .carusel .navigator .dot{
@@ -67,3 +80,9 @@
     margin: 0px 0.5rem;
     cursor: pointer;
 }
+
+@media (min-width:721px) {
+    
+}
+
+@media (min-width: 1025) {}

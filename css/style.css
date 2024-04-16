@@ -50,24 +50,6 @@ header nav ul {
     list-style: none;
 }
 
-
-.buy {
-    position: fixed;
-    text-decoration: none;
-    color: #000;
-    background-color: #fff;
-    border-radius: 4rem;
-    font-size: 3rem;
-    padding: 20px;
-    border: 2px solid #000;
-    z-index: 998;
-}
-
-.buy:hover {
-    background-color: #000;
-    color: #fff;
-}
-
 @media (min-width: 1024px){
     header {
         display: flex;
@@ -266,7 +248,6 @@ h1{
 }
 
 .gallery-products {
-    background-color: #ededf7;
     display: flex;
     flex-wrap: wrap;
     padding: 0.8rem;
@@ -288,7 +269,6 @@ h1{
 }
 
 .gallery {
-    background-color: #ededf7;
     display: flex;
     flex-wrap: wrap;
     padding: 0.8rem;
@@ -397,6 +377,47 @@ h1{
 }
 
 /*Events*/
+.event{
+    background-image: url(../resources/backgrounds/img4.jpg);
+    background-size: cover;
+    height: fit-content;
+    text-align: center;
+}
+.event p {
+    color: #fff;
+
+}
+
+.gallery-event{
+    box-sizing: border-box;
+    flex: 1 1 30%;
+    max-width: 350px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    padding:  0.5rem;
+    background-color: #fff;
+    text-align: center;
+    transition: 1s transform ease;
+}
+
+.gallery-event video{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery-event img {
+    width: 325px;
+    height: 590px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.txt-event{
+    color: #fff;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 2.5rem;
+}
 
 .izquierda video {
     width: 100%;
