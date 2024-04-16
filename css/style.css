@@ -182,12 +182,28 @@ header nav ul {
         display: none;
     }
     
+    footer {
+        align-items: center;
+        text-align: center;
+    
+    }
+    
+    
 }
 
 /*Footer*/
 
 footer {
+    display: flex;
     background-color: #f2b8af;
+    justify-content: space-between;
+
+}
+
+footer a{
+
+    text-decoration: none;
+    color: #000;
 }
 
 /*About us*/
